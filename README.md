@@ -1,1 +1,1 @@
-This Repository contains all the practice projects that are created in my journey of web development. 
+This Repository contains all the practice projects that are created on my journey of web development. 
