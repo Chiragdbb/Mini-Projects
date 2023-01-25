@@ -84,9 +84,9 @@
 
 .bg-name {
     user-select: none;
-    bottom: -16%;
-    left: 5%;
-    font-size: 7rem;
+    bottom: -46.5%;
+    left: -12%;
+    font-size: 8rem;
     color: var(--very-light-grey);
     transition: all 3s;
 }
@@ -443,7 +443,6 @@
 .card-2 {
     margin-left: 7.5rem;
     background-image: url('/Porfolio/assets/asset\ 30.png');
-    background-size: ;
 }
 
 .card-2 .tech-stack {
@@ -494,12 +493,11 @@
 /* skills  */
 
 .skills {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 10rem 0;
     display: flex;
     gap: 5rem;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .skills-left {
@@ -577,7 +575,6 @@
 
 .contact-me {
     width: 100%;
-    min-height: 100vh;
     background-color: var(--very-light-grey);
     padding: 1rem 0;
 }
@@ -668,7 +665,7 @@ textarea:focus {
 footer {
     padding-top: 2rem;
     width: 100%;
-    min-height: 30vh;
+    /* height: 30vh; */
     background-color: var(--blueish-grey);
     position: relative;
     overflow-y: hidden;
@@ -705,4 +702,6 @@ footer {
 
 /* Media Queries */
 
-@mediam only screen and ()
+@media only screen and (max-width: 1300px){
+    
+}
