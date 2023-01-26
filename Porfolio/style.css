@@ -25,7 +25,7 @@
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -159,6 +159,10 @@
 }
 
 /* right side of hero section */
+
+#btn-bottom{
+    display: none;
+}
 
 .right {
     position: relative;
@@ -298,7 +302,7 @@
 }
 
 .projects-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -465,6 +469,10 @@
     background-image: url('/Porfolio/assets/asset\ 31.png');
 }
 
+.card-3 .card-content{
+    width: 90%;
+}
+
 .card-4 {
     background-position: top;
     background-size: cover;
@@ -493,7 +501,6 @@
 /* skills  */
 
 .skills {
-    /* min-height: 100vh; */
     padding: 10rem 0;
     display: flex;
     gap: 5rem;
@@ -539,8 +546,11 @@
     transition: all 3s;
 }
 
+.skills-icons{
+    position: relative;
+}
+
 .skills-icons img {
-    height: 90px;
     width: 90px;
     scale: 1;
     transition: scale 0.25s linear;
@@ -551,23 +561,22 @@
 }
 
 .bg-blob img {
-    aspect-ratio: 1/1;
     width: 350px;
     height: 300px;
 }
 
 .bg-blob {
-    right: 13%;
-    bottom: 29%;
+    right: 60%;
+    bottom: 45%;
+    transform: translate(50%, 50%);
     z-index: -1;
-    transform: rotate();
-    animation: blob-animate 3s infinite linear;
+    animation: blob-animate 5s infinite linear;
 }
 
 @keyframes blob-animate {
     50% {
-        right: 15%;
-        bottom: 27%;
+        right: 47%;
+        bottom: 50%;
     }
 }
 
@@ -580,7 +589,7 @@
 }
 
 .contact-me-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -663,11 +672,10 @@ textarea:focus {
 /* footer */
 
 footer {
-    padding-top: 2rem;
     width: 100%;
-    /* height: 30vh; */
-    background-color: var(--blueish-grey);
     position: relative;
+    background-color: var(--blueish-grey);
+    padding-top: 2rem;
     overflow-y: hidden;
 }
 
@@ -703,5 +711,138 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 1300px){
+    .ft-bg-text, .bg-name, .bg-skills, #btn-top {
+        display: none;
+    }
+
+    .hero{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        justify-content: center;
+    }
     
+    .hero > *{
+        align-items: center;
+    }
+
+    #btn-bottom{
+        display: block;
+        margin: 0rem 0;
+    }
+
+    .right{
+        margin-top:2rem;   
+        scale: 0.7;     
+    }
+
+    .projects-container{
+        padding-inline: 1rem;
+    }    
+
+    .project-heading{
+        font-size: 3rem;
+    }
+
+    .projects-section{
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .card-container:hover>.num {
+        display: none;
+    }
+
+    .card-container, .card-2, .card-3 , .card-4{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card-2, .card-4{
+        margin-left: 0;
+    }
+
+    .card-inside-container{
+        scale: 0.5;       
+    }
+
+    .card-content{
+        top: 0;
+    }
+
+    .card-2 .card-inside-container, .card-4 .card-inside-container{
+        left: -5%;
+        bottom: auto;
+    }
+
+    .card-3 .card-inside-container{
+        left: 5%;
+    }
+
+    .card-container:hover .num {
+        display: none;
+    }
+
+    .skills{
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+
+    .skills-icons{
+        justify-content: center;
+    }
+
+    .skills-icons>img{
+        width: 50px;
+    }
+
+    @keyframes blob-animate {
+        50% {
+            right: 53%;
+            bottom: 57%;
+        }
+    } 
+
+    .contact-heading{
+        font-size: 3rem;
+        text-align: center;   
+    }
+
+    .contact-descrip{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .form-container{
+        margin-top: 1rem;
+    }
+
+    .form-btn{
+        margin: 3rem auto 2rem auto;   
+    }
+
+    form{
+        width: 100%;
+        padding-inline: 2rem;
+    }
+
+    footer{
+        padding: 1rem 0;
+    }
+    .ft-container{
+        height: 100px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}   
+
+@media only screen and (max-width: 1000px){
+    .links{
+        display: none;
+    }
 }
