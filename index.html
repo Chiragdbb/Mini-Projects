@@ -1,17 +1,767 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Razorypay Clone</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razorypay | Clone</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
+
 <body>
+  <div class="font-mulish overflow-x-hidden">
     <header>
-        <nav class="w-full h-1/4 bg-blue-500 text-color">
-            something
-        </nav>
+      <!--/////////////////// navigation bar /////////////////////// -->
+
+      <nav class="w-full h-20 bg-deepBlue">
+        <div class="max-w-[1080px] h-full mx-auto text-white flex justify-between items-center gap-8">
+          <a href="/"><img src="Razorpay-Clone/assets/logo.svg" alt="logo-light" width="125px" /></a>
+
+          <ul class="h-full flex items-center">
+            <li class="group min-h-full pt-7 px-3 cursor-pointer hover:duration-200 hover:text-lightBlue hover:font-xs">
+              <a href="#">Payments</a>
+              <div
+                class="hidden group-hover:block group-hover:duration-200 border-2 border-lightBlue w-11/12 mx-auto mt-3">
+              </div>
+            </li>
+            <li class="group min-h-full pt-7 px-3 cursor-pointer hover:duration-200 hover:text-lightBlue hover:font-xs">
+              <a href="#">Banking</a>
+              <div
+                class="hidden group-hover:block group-hover:duration-200 border-2 border-lightBlue w-11/12 mx-auto mt-3">
+              </div>
+            </li>
+            <li
+              class="group min-h-full min-w-fit pt-7 px-3 cursor-pointer hover:duration-200 hover:text-lightBlue hover:font-xs">
+              <a href="#">Corporate Card</a>
+            </li>
+            <li class="group min-h-full pt-7 px-3 cursor-pointer hover:duration-200 hover:text-lightBlue hover:font-xs">
+              <a href="#">Payroll</a>
+            </li>
+            <li class="group min-h-full pt-7 px-3 cursor-pointer hover:duration-200 hover:text-lightBlue hover:font-xs">
+              <a href="#">Resources</a>
+              <div
+                class="hidden group-hover:block group-hover:duration-200 border-2 border-lightBlue w-11/12 mx-auto mt-3">
+              </div>
+            </li>
+            <li class="group min-h-full pt-7 px-3 cursor-pointer hover:duration-200 hover:text-lightBlue hover:font-xs">
+              <a href="#">Support</a>
+              <div
+                class="hidden group-hover:block group-hover:duration-200 border-2 border-lightBlue w-11/12 mx-auto mt-3">
+              </div>
+            </li>
+            <li class="group min-h-full pt-7 px-3 cursor-pointer hover:duration-200 hover:text-lightBlue hover:font-xs">
+              <a href="#">Pricing</a>
+              <div
+                class="hidden group-hover:block group-hover:duration-200 border-2 border-lightBlue w-11/12 mx-auto mt-3">
+              </div>
+            </li>
+          </ul>
+
+          <div class="flex gap-4 items-center">
+            <img src="Razorpay-Clone/assets/india-flag.svg" alt="country-flag" width="30px" height="25px" />
+            <button class="border min-w-fit rounded-sm px-5 py-3 border-lightBlue font-bold text-sm">
+              Log In
+            </button>
+            <button
+              class="bg-white min-w-fit text-lightBlue font-bold rounded-sm px-4 py-3 border-lightBlue flex gap-1 text-sm align hover:text-lightBlue500 duration-150">
+              Sign Up
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"
+                class="w-[14px] h-[14px] ml-2 mt-1">
+                <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
+
+    <main>
+      <!--/////////////////// hero section ///////////////////// -->
+
+      <section class="relative w-full bg-deepBlue">
+        <div class="max-w-[1080px] mx-auto flex items-center">
+          <!-- hero section left -->
+          <div class="text-white">
+            <h1 class="text-[40px] font-bold leading-tight mt-2">
+              Power your finance, grow your business
+            </h1>
+            <div class="border-2 w-6 mt-6 border-greenLight"></div>
+            <p class="opacity-70 text-lg mt-7 mb-4">
+              Accept payments from customers. Automate payouts to vendors &
+              employees. Never run out of working capital.
+            </p>
+            <button class="bg-lightBlue p-4 my-4 rounded-md font-bold hover:bg-lightBlue500 duration-150">
+              Sign Up Now
+            </button>
+          </div>
+
+          <!--//////////////////// hero section right ////////////////////// -->
+
+          <div>
+            <img src="/Razorpay-Clone/assets/hero-illustration.jpg" alt="hero-illustration" />
+          </div>
+        </div>
+        <div class="w-[101%] absolute top-[98%] left-0 right-0">
+          <img class="w-full object-fill" src="/Razorpay-Clone/assets/hero-shape.svg" alt="transition-image"
+            loading="lazy" />
+        </div>
+      </section>
+
+      <!--//////////////////////// Payments Section //////////////////////// -->
+
+      <section class="w-full mt-52 relative">
+        <div class="max-w-[1080px] mx-auto">
+          <h2 class="font-extrabold text-2xl text-center">
+            Accept Payments with Razorypay Payment Suite
+          </h2>
+          <div class="border-2 w-6 mt-4 border-greenLight mx-auto"></div>
+
+          <div class="w-44 h-10 pointer-events-none absolute -top-2 left-40 overflow-y-hidden">
+            <img class="object-none object-left-top" src="/Razorpay-Clone/assets/feature-section1-dottedrows.png"
+              alt="bg-dots" loading="lazy" />
+          </div>
+
+          <div class="rotate-180 pointer-events-none absolute top-9 right-0 overflow-y-hidden z-0">
+            <img class="object-none" src="/Razorpay-Clone/assets/feature-section1-dottedrows.png" alt="bg-dots-2"
+              loading="lazy" />
+          </div>
+
+          <!--/////////////////////// Payments section part 1 //////////////////////// -->
+
+          <div class="border rounded-md mt-20 pl-10 pt-10 pb-6 bg-white relative z-10">
+            <img class="absolute top-0 right-0 w-[55%] object-contain" src="/Razorpay-Clone/assets/payment-suite.png"
+              alt="payment-suite" />
+
+            <div class="w-1/2">
+              <h2 class="font-bold text-[28px]">
+                Supercharge your business with the all-powerful
+                <span class="text-lightBlue">Payment Gateway</span>
+              </h2>
+              <ul class="mt-10 space-y-2">
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  100+ Payment Methods
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Industry Leading Success Rate
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Superior Checkout Experience
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Easy to Integrate
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Instant Settlements from day 1
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  In-depth Reporting and Insights
+                </li>
+              </ul>
+              <div class="mt-10">
+                <button
+                  class="bg-lightBlue px-5 py-4 my-4 rounded-md font-bold hover:bg-lightBlue500 duration-150 text-white inline-block">
+                  Sign Up Now
+                  <svg class="w-[14px] h-[14px] inline-block ml-2" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" focusable="false">
+                    <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                  </svg>
+                </button>
+                <div class="inline-block ml-4 font-bold text-lightBlue cursor-pointer hover:text-gray2">
+                  <a href="#">Know More</a>
+                  <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--///////////////////// Payments section part 2 ////////////////////////// -->
+
+          <div class="mt-16 my-10 grid grid-cols-3 grid-rows-2 gap-8">
+
+            <!--//////// card 1 //////////-->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img class="absolute opacity-0 right-0 bottom-6 group-hover:opacity-100 transition-opacity duration-200"
+                src="/Razorpay-Clone/assets/features-wave.svg" alt="wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 -z-20 bg-lightBlue group-hover:bg-lightBlue300 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/payment-link-icon.svg" alt="payment-link-icon" loading="lazy">
+              <svg
+                class="h-full w-full absolute -z-10 inset-0 stroke-1 stroke-[#818597] group-hover:drop-shadow-[5px_5px_20px_rgba(0,0,0,0.10)] transition-all duration-200 "
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#fff"></path>
+              </svg>
+              <div class="relative z-10">
+                <h3 class="text-[22px] font-extrabold text-deepBlueHead ">
+                  Payment Links
+                </h3>
+                <p class="opacity-50 font-semibold mt-6 w-11/12">
+                  Share payment link via an email, SMS, messenger, chatbot etc.
+                  and get paid immediately
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!--//////// card 2 //////////-->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img class="absolute opacity-0 right-0 bottom-6 group-hover:opacity-100 transition-opacity duration-200"
+                src="/Razorpay-Clone/assets/features-wave.svg" alt="wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 -z-20 bg-lightBlue group-hover:bg-lightBlue300 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/payment-pages-icon.svg" alt="payment-link-icon" loading="lazy">
+              <svg
+                class="h-full w-full absolute -z-10 inset-0 stroke-1 stroke-[#818597] group-hover:drop-shadow-[5px_5px_20px_rgba(0,0,0,0.10)] transition-all duration-200 "
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#fff"></path>
+              </svg>
+              <div class="relative z-10">
+                <h3 class="text-[22px] font-extrabold text-deepBlueHead ">
+                  Payment Pages
+                </h3>
+                <p class="opacity-50 font-semibold mt-6 w-11/12">
+                  Take your store online instantly with zero coding. Accept international & domestic payments
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!--//////// card 3 //////////-->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img class="absolute opacity-0 right-0 bottom-6 group-hover:opacity-100 transition-opacity duration-200"
+                src="/Razorpay-Clone/assets/features-wave.svg" alt="wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 -z-20 bg-lightBlue group-hover:bg-lightBlue300 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/payment-buttons-icon.svg" alt="payment-link-icon" loading="lazy">
+              <svg
+                class="h-full w-full absolute -z-10 inset-0 stroke-1 stroke-[#818597] group-hover:drop-shadow-[5px_5px_20px_rgba(0,0,0,0.10)] transition-all duration-200 "
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#fff"></path>
+              </svg>
+              <div class="relative z-10">
+                <h3 class="text-[22px] font-extrabold text-deepBlueHead ">
+                  Payment Buttons
+                </h3>
+                <p class="opacity-50 font-semibold mt-6 w-11/12">
+                  Create, Copy & Collect With Payment Button. Collect one time or subscription payments & more
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!--//////// card 4 //////////-->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img class="absolute opacity-0 right-0 bottom-6 group-hover:opacity-100 transition-opacity duration-200"
+                src="/Razorpay-Clone/assets/features-wave.svg" alt="wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 -z-20 bg-lightBlue group-hover:bg-lightBlue300 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/subscriptions-icon.svg" alt="payment-link-icon" loading="lazy">
+              <svg
+                class="h-full w-full absolute -z-10 inset-0 stroke-1 stroke-[#818597] group-hover:drop-shadow-[5px_5px_20px_rgba(0,0,0,0.10)] transition-all duration-200 "
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#fff"></path>
+              </svg>
+              <div class="relative z-10">
+                <h3 class="text-[22px] font-extrabold text-deepBlueHead ">
+                  Subscription
+                </h3>
+                <p class="opacity-50 font-semibold mt-6 w-11/12">
+                  Subscription plans with automated recurring transactions on various payment modes.
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!--//////// card 5 //////////-->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img class="absolute opacity-0 right-0 bottom-6 group-hover:opacity-100 transition-opacity duration-200"
+                src="/Razorpay-Clone/assets/features-wave.svg" alt="wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 -z-20 bg-lightBlue group-hover:bg-lightBlue300 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/route-icon.svg" alt="payment-link-icon" loading="lazy">
+              <svg
+                class="h-full w-full absolute -z-10 inset-0 stroke-1 stroke-[#818597] group-hover:drop-shadow-[5px_5px_20px_rgba(0,0,0,0.10)] transition-all duration-200 "
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#fff"></path>
+              </svg>
+              <div class="relative z-10">
+                <h3 class="text-[22px] font-extrabold text-deepBlueHead ">
+                  Route
+                </h3>
+                <p class="opacity-50 font-semibold mt-6 w-11/12">
+                  Split incoming payments auto- matically to vendor’s accounts, manage marketplace money flow...
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!--//////// card 6 //////////-->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img class="absolute opacity-0 right-0 bottom-6 group-hover:opacity-100 transition-opacity duration-200"
+                src="/Razorpay-Clone/assets/features-wave.svg" alt="wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 -z-20 bg-lightBlue group-hover:bg-lightBlue300 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/smart-collect-icon.svg" alt="payment-link-icon" loading="lazy">
+              <svg
+                class="h-full w-full absolute -z-10 inset-0 stroke-1 stroke-[#818597] group-hover:drop-shadow-[5px_5px_20px_rgba(0,0,0,0.10)] transition-all duration-200 "
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.15">
+                <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#fff"></path>
+              </svg>
+              <div class="relative z-10">
+                <h3 class="text-[22px] font-extrabold text-deepBlueHead ">
+                  Smart Collect
+                </h3>
+                <p class="opacity-50 font-semibold mt-6 w-11/12">
+                  Automatically reconcile incoming NEFT, RTGS, IMPS, UPI payments using Virtual Accounts & UPI-IDs
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ////////////////////////// feature section 2 //////////////////////////// -->
+      <!-- hover effect on cards left -->
+      <section
+        class="w-full bg-[url('Razorpay-Clone\assets\feature-section-2BG.svg')] bg-no-repeat bg-cover min-h-fit mt-24 pt-56 pb-[500px] ">
+        <div class="max-w-[1080px] mx-auto  relative">
+
+          <h2 class="font-extrabold text-2xl text-center text-white">
+            Explore Razorpay Business Banking
+          </h2>
+          <div class="border-2 w-6 mt-4 border-greenLight mx-auto"></div>
+
+          <!-- ///////////////////////// feature section 2 part 1 /////////////////////////// -->
+
+          <div class="relative border rounded-md border-white border-opacity-30 mt-20  z-50">
+
+            <img class="w-52 absolute -top-36 -left-36 -z-10" src="/Razorpay-Clone/assets/x-flame-1.png" alt="flame-1">
+            <img class="absolute -bottom-8 -right-48 -z-10" src="/Razorpay-Clone/assets/x-flame-2.png" alt="flame-2">
+
+            <div
+              class="relative z-20 bg-[#181c2e] pl-10 pt-10 pb-2 bg-[url('Razorpay-Clone/assets/buisness-banking.png')] bg-no-repeat bg-right-top">
+              <h2 class="font-bold text-[28px] text-white w-[55%]">
+                Manage your company’s finances with
+                <img class="inline-block w-[168px]" src="/Razorpay-Clone/assets/razorpayX.svg" alt="logo">
+                <span class="text-greenLight">Business Banking</span>
+              </h2>
+              <ul class="mt-10 space-y-2 text-white">
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Open a fully digital current account
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Automate payables & compliment payments
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Simplify and track spends with Corporate cards
+                </li>
+                <li>
+                  <svg class="w-6 text-greenLight inline-block mr-1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  View financial insights at a glance
+                </li>
+              </ul>
+              <div class="mt-10">
+                <button
+                  class="bg-lightBlue w-[170px] h-12 px-5 py-2 my-4 rounded-md font-bold text-left hover:bg-lightBlue500 duration-150 text-white inline-block relative">
+                  Sign Up
+                  <div class="w-12 h-14 absolute bg-greenLight skew-x-[20deg] right-5 -top-1">
+                  </div>
+                  <svg class="absolute right-[34px] bottom-3.5 w-[20px] h-[20px] inline-block"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                    <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                  </svg>
+                </button>
+                <div class="inline-block ml-4 font-bold text-lightBlue cursor-pointer hover:text-gray2">
+                  <a href="#">Know More</a>
+                  <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- //////////////////// feature section 2 part 2 /////////////////////////// -->
+
+          <div class="grid grid-cols-3 grid-rows-1 gap-6 mt-16">
+
+            <!-- //////////// Card 1 ////////////-->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img
+                class="absolute opacity-0 right-0 bottom-2 group-hover:opacity-100 transition-opacity duration-200 z-50"
+                src="/Razorpay-Clone/assets/features2-wave.svg" alt="dark-wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 z-10 bg-lightBlue group-hover:bg-lightBlue500 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/current-icon.svg" alt="current-icon" loading="lazy">
+
+              <svg
+                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-10 inset-0 featureCardSVG transition-all duration-200"
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.8">
+                <path d="m 0 6 
+                      a 6 6 0 0 1 6 -6 
+                      h 250.32501220703125 
+                      a 16 16 0 0 1 11 5 
+                      l 77 77 
+                      a 16 16 0 0 1 5 11 
+                      v 126 
+                      a 6 6 0 0 1 -6 6 
+                      h -337.32501220703125 
+                      a 6 6 0 0 1 -6 -6 
+                      z" fill="#181C2E"></path>
+              </svg>
+
+              <div class="relative z-[100]">
+                <h3 class="text-[22px] font-extrabold text-white ">
+                  Current Account
+                </h3>
+                <p class="opacity-40  text-white mt-6 w-11/12">
+                  Current accounts for fast-growing businesses, supported by the best-in-class technology
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer relative z-[100] ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!-- //////////// Card 2 ///////////////// -->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img
+                class="absolute opacity-0 right-0 bottom-2 group-hover:opacity-100 transition-opacity duration-200 z-50"
+                src="/Razorpay-Clone/assets/features2-wave.svg" alt="dark-wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 z-10 bg-lightBlue group-hover:bg-lightBlue500 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/capital-credit-icon.svg" alt="capital-icon" loading="lazy">
+
+              <svg
+                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-10 inset-0 featureCardSVG transition-all duration-200"
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.8">
+                <path d="m 0 6 
+                      a 6 6 0 0 1 6 -6 
+                      h 250.32501220703125 
+                      a 16 16 0 0 1 11 5 
+                      l 77 77 
+                      a 16 16 0 0 1 5 11 
+                      v 126 
+                      a 6 6 0 0 1 -6 6 
+                      h -337.32501220703125 
+                      a 6 6 0 0 1 -6 -6 
+                      z" fill="#181C2E"></path>
+              </svg>
+
+              <div class="relative z-[100]">
+                <h3 class="text-[22px] font-extrabold text-white ">
+                  Capital & Credit
+                </h3>
+                <p class="opacity-40  text-white mt-6 w-11/12">
+                  Instant additional cash and corporate cards designed for growing businesses
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer relative z-[100] ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <!-- //////////// Card 3 ///////////// -->
+
+            <div class="h-60 p-6 relative group hover:cursor-pointer">
+              <img
+                class="absolute opacity-0 right-0 bottom-2 group-hover:opacity-100 transition-opacity duration-200 z-50"
+                src="/Razorpay-Clone/assets/features2-wave.svg" alt="dark-wave">
+              <img
+                class="w-12 h-12 absolute right-3 top-3 z-10 bg-lightBlue group-hover:bg-lightBlue500 transition-colors duration-200 rounded-3xl"
+                src="/Razorpay-Clone/assets/payouts-icon.svg" alt="payouts-icon" loading="lazy">
+
+              <svg
+                class="stroke-1 stroke-[#525a76] h-full w-full absolute z-10 inset-0 featureCardSVG transition-all duration-200"
+                viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="stroke-opacity: 0.8">
+                <path d="m 0 6 
+                      a 6 6 0 0 1 6 -6 
+                      h 250.32501220703125 
+                      a 16 16 0 0 1 11 5 
+                      l 77 77 
+                      a 16 16 0 0 1 5 11 
+                      v 126 
+                      a 6 6 0 0 1 -6 6 
+                      h -337.32501220703125 
+                      a 6 6 0 0 1 -6 -6 
+                      z" fill="#181C2E"></path>
+              </svg>
+
+              <div class="relative z-[100]">
+                <h3 class="text-[22px] font-extrabold text-white ">
+                  Payouts
+                </h3>
+                <p class="opacity-40  text-white mt-6 w-11/12">
+                  Make simple, reliable & secure payouts to bank accounts, UPI IDs or wallets
+                </p>
+              </div>
+              <div class="inline-block mt-10 font-bold text-lightBlue cursor-pointer relative z-[100] ">
+                <a href="#">Know More</a>
+                <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-chevron-right w-5 h-5 text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <!--/////////////////// feature section 2 part 3 //////////////////// -->
+
+          <div class="border rounded-md border-white border-opacity-30 mt-10 px-8 py-10">
+            <p class="text-white inline-block text-xl">
+              Check out the live demo to learn how RazorpayX works. <span class="font-bold">No sign-up required!</span>
+            </p>
+            <button
+              class="bg-lightBlue w-[260px] h-12 px-5 py-2 ml-6 rounded-md font-bold text-left hover:bg-lightBlue500 duration-150 text-white inline-block relative ">
+              Check out the demo
+              <div class="w-12 h-14 absolute bg-greenLight skew-x-[20deg] right-5 -top-1">
+              </div>
+              <svg class="absolute right-[34px] bottom-3.5 w-[20px] h-[20px] inline-block"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false">
+                <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- //////////////////////// New features section /////////////////////////// -->
+
+      <section class="mt-10">
+        <div class="w-[1080px]  mx-auto relative">
+
+          <!-- <img class="absolute" src="" alt="bg-dots"> -->
+          <!-- <img class="absolute" src="" alt="bg-dots-2"> -->
+
+          <div class="grid grid-cols-3 grid-rows-2 gap-4">
+            
+              <div class="font-extrabold text-4xl leading-relaxed text-deepBlueHead">New in the <span class="text-lightBlue500">Razorpay</span> Product Suite</div>
+
+              <!-- card 1 -->
+              <div class="shadow-lg p-10 rounded-md relative">
+                <img class="absolute top-0 left-0" src="" alt="bg-design">
+                <img  class="absolute bottom-0 right-0" src="" alt="bg-desgin-2">
+
+                <img class="w-10" src="/Razorpay-Clone/assets/razorpayXicon.svg" alt="badge">
+                <h3 class="font-bold text-lg mt-6">Corporate Cards</h3>
+                <p class="opacity-50 mt-4">Simplify your recurring, international and team expenses with savings on every spend. Save upto 10
+                  lacs every month.</p>
+                  <div class="inline-block mt-4 font-bold text-lightBlue cursor-pointer hover:text-gray2">
+                    <a href="#">Know More</a>
+                    <svg class="w-[16px] inline-block -ml-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-chevron-right w-5 h-5 text-lightBlue500 hover:text-lightBlue transition-colors duration-200">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+              </div>
+              
+              <!--/////////// card 2 /////////////-->
+
+              <!--/////////// card 3 /////////////-->
+
+              <!--/////////// card 4 /////////////-->
+
+              <!--/////////// card 5 /////////////-->
+
+
+            </div>
+
+          </div>
+      </section>
+
+
+    </main>
+  </div>
 </body>
+
 </html>
