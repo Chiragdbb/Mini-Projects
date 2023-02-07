@@ -4,11 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "mulish": ["Mulish", "sans-serif"],
-        "Whitney": ["Whitney"],
-        "Ginto": ["Ginto"],
-        "ggSans": ["ggSans"],
-        "GintoNord": ["GintoNord"]
+        "Poppins":["Poppins"],
+        "mulish": ["Mulish"],
       },
       colors: {
         deepBlue: "#02042a",
@@ -21,8 +18,6 @@ module.exports = {
         grayBlue: "#344a6c",
         deepBlueHead: "#162f56",
         gray2: "#525a76",
-        disBlack: "#23272a",
-        disBlue: "#404eed",
       },
     },
   },
